@@ -27,6 +27,22 @@ const routes: Routes = [
   {
     path: 'sekspir',
     loadChildren: () => import('./sekspir/sekspir.module').then( m => m.SekspirPageModule)
+  },
+  {
+    path: 'theatre',
+    loadChildren: () => import('./theatre/theatre.module').then( m => m.TheatrePageModule)
+  },
+  {
+    path: 'concert',
+    loadChildren: () => import('./concert/concert.module').then( m => m.ConcertPageModule)
+  },
+  {
+    path: 'balley',
+    loadChildren: () => import('./balley/balley.module').then( m => m.BalleyPageModule)
+  },
+  {
+    path: 'musical',
+    loadChildren: () => import('./musical/musical.module').then( m => m.MusicalPageModule)
   }
 ];
 
