@@ -43,6 +43,18 @@ const routes: Routes = [
   {
     path: 'musical',
     loadChildren: () => import('./musical/musical.module').then( m => m.MusicalPageModule)
+  },
+  {
+    path: 'reis',
+    loadChildren: () => import('./reis/reis.module').then( m => m.ReisPageModule)
+  },
+  {
+    path: 'bale',
+    loadChildren: () => import('./bale/bale.module').then( m => m.BalePageModule)
+  },
+  {
+    path: 'tarkan',
+    loadChildren: () => import('./tarkan/tarkan.module').then( m => m.TarkanPageModule)
   }
 ];
 
